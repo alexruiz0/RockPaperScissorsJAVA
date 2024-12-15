@@ -3,7 +3,7 @@ public class RockPaperScissors {
     private Player p1;
     private Player p2;
 
-    public void RockPaperScissors(p11, p22){
+    public RockPaperScissors(Player p11, Player p22){
         this.p1 = p11;
         this.p2 = p22;
     }
@@ -20,9 +20,8 @@ public class RockPaperScissors {
             System.out.println("Player 1 win");
             return 1;
         }
-        if((res2 == 1 && res1 == 3) || (res2 == 2 && res1 == 1) || (res2 == 3 && res1 == 2)){
-            System.out.println("Player 2 win");
-            return 2;
-        }
+        System.out.println("Player 2 win");
+        return 2;
+        
     }
 }

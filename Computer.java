@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Computer extends Player{
     
-    public void Computer(){
+    public Computer(){
     }
 
     @Override
