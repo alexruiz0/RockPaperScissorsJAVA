@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Human extends Player{
-    private Scanner s = new Scanner(System.in);
-    public Human(){
-        
+    private Scanner s;// = new Scanner(System.in);
+    public Human(Scanner s){
+        this.s = s;
     }
 
     @Override
@@ -13,7 +13,7 @@ public class Human extends Player{
         while(op < 1 || op > 3){
             op = this.s.nextInt();
         }
-        // this.s.close();
+        
         return op;
     }
 }
